@@ -8,7 +8,7 @@ function compute()
     //interest = interest.fontcolor("yellow");
     var year = new Date().getFullYear() + parseInt(years);
 
-    var text2Display = "If you deposit "+principal+",at an interest rate of "+rate+"%.You will receive an amount of <font style='color:yellow' >"+interest+"</font> in the year "+year;
+    var text2Display = "If you deposit <font style='color:yellow' >"+principal+"</font>,at an interest rate of <font style='color:yellow' >"+rate+"</font>%.You will receive an amount of <font style='color:yellow' >"+interest+"</font> in the year "+year;
     document.getElementById("result").innerHTML=text2Display;
 }
 function updateRate()
