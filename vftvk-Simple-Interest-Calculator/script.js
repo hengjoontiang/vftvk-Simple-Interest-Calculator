@@ -5,10 +5,11 @@ function compute()
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
     var interest = principal * years * rate / 100.0;
+    //interest = interest.fontcolor("yellow");
     var year = new Date().getFullYear() + parseInt(years);
 
-    var text2Display = "If you deposit "+principal+",at an interest rate of "+rate+"%.You will receive an amount of "+interest+",in the year "+year;
-    document.getElementById("result").innerText=text2Display;
+    var text2Display = "If you deposit "+principal+",at an interest rate of "+rate+"%.You will receive an amount of <font style='color:yellow' >"+interest+"</font> in the year "+year;
+    document.getElementById("result").innerHTML=text2Display;
 }
 function updateRate()
 {
